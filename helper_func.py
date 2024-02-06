@@ -10,7 +10,7 @@ from pyrogram.errors.exceptions.bad_request_400 import UserNotParticipant
 from pyrogram.errors import FloodWait
 
 async def is_subscribed(filter, client, update):
-    if not (FORCESUB_CHANNEL or FORCESUB_CHANNEL1):
+    if not (FORCE_SUB_CHANNEL or FORCE_SUB_CHANNEL1):
         return True
 
     user_id = update.from_user.id
@@ -20,7 +20,7 @@ async def is_subscribed(filter, client, update):
 
     member_status = ChatMemberStatus.OWNER, ChatMemberStatus.ADMINISTRATOR, ChatMemberStatus.MEMBER
 
-    for channel_id in [FORCESUB_CHANNEL, FORCESUB_CHANNEL1]:
+    for channel_id in [FORC_ESUB_CHANNEL, FORC_ESUB_CHANNEL1]:
         if not channel_id:
             continue
 
