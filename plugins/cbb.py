@@ -19,9 +19,27 @@ async def cb_handler(client: Bot, query: CallbackQuery):
 InlineKeyboardButton('Aɴɪᴍᴇ Gʀᴏᴜᴘ', url = 'https://t.me/ChatBox480')
                     ],[
                         InlineKeyboardButton("⛔️ Close ⛔️", callback_data = "close")
-                    ]
-                ]
-            )
+                    ]])
+        )
+    elif data == "help":
+           await query.message.edit_text(
+                        text = """<b><u>BOT COMMANDS:</u>
+
+❏ Commands For BOT Admins
+├/start : start the bot or get posts
+├/batch : Create Group Message
+├/genlink : create link for one post
+├/users : view bot statistics
+├/broadcast : broadcast Message
+├/tutorial : To get a screen record
+└/stats : checking your bot uptime</b>""",
+            disable_web_page_preview = True,
+            reply_markup = InlineKeyboardMarkup(
+                [
+                    [
+                        InlineKeyboardButton("⬅️ Back", callback_dat = "about"),
+                        InlineKeyboardButton("⛔️ Close", callback_data = "close")
+                    ]])
         )
     elif data == "close":
         await query.message.delete()
