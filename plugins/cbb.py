@@ -37,7 +37,7 @@ InlineKeyboardButton('Aɴɪᴍᴇ Gʀᴏᴜᴘ', url = 'https://t.me/ChatBox480'
             reply_markup = InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("⬅️ Back", callback_dat = "about"),
+                        InlineKeyboardButton("⬅️ Back", callback_data = "about"),
                         InlineKeyboardButton("⛔️ Close", callback_data = "close")
                     ]])
         )
