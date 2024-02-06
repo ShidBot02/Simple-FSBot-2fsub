@@ -32,7 +32,9 @@ async def cb_handler(client: Bot, query: CallbackQuery):
 <b>‣ /genlink :</b> create link for one post
 <b>‣ /users :</b> view bot statistics
 <b>‣ /broadcast :</b> broadcast Message
-<b>‣ /stats :</b> checking your bot uptime""",
+<b>‣ /stats :</b> checking your bot uptime
+
+<b>➪ Need more help Contact here - @ChatBox480</b>""",
             disable_web_page_preview = True,
             reply_markup = InlineKeyboardMarkup(
                 [
@@ -45,7 +47,7 @@ async def cb_handler(client: Bot, query: CallbackQuery):
         )
     elif data == "start":
         await query.message.edit_text(
-                    text = """Hᴇʟʟᴏ, {first} 👋\n\n<b>I ᴀᴍ Oɴʟʏ Sᴛᴏʀᴇ ғɪʟᴇs ғᴏʀ <a href='https://t.me/Animemoviesr'>infinity void ∞</a></b>""",
+                    text = """<b>Hᴇʟʟᴏ....\n\nI ᴀᴍ Oɴʟʏ Sᴛᴏʀᴇ ғɪʟᴇs ғᴏʀ <a href='https://t.me/Animemoviesr'>infinity void ∞</a></b>""",
             disable_web_page_preview = True,
             reply_markup = InlineKeyboardMarkup(
             [
