@@ -12,7 +12,7 @@ async def stats(bot: Bot, message: Message):
     time = get_readable_time(delta.seconds)
     await message.reply(BOT_STATS_TEXT.format(uptime=time))
 
-@Client.on_message(filters.command('help'))
+@Client.on_message(filters.command('help') & filters.user(ADMINS))
 async def help(client, message):
     reply_markup = InlineKeyboardMarkup(
             [
@@ -21,6 +21,6 @@ async def help(client, message):
                 ]])
     await message.reply(HELP_TEXT)
 
-@Client.on_message(filters.command('tutorial'))
+@Client.on_message(filters.command('tutorial') & filters.user(ADMINS))
 async def tutorial(client, message):
     await message.reply(TUTO_TEXT)
