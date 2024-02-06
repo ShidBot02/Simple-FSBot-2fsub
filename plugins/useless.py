@@ -1,5 +1,5 @@
 from bot import Bot
-from pyrogram.types import Message
+from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 from pyrogram import Client, filters
 from config import ADMINS, BOT_STATS_TEXT, USER_REPLY_TEXT, HELP_TEXT, TUTO_TEXT
 from datetime import datetime
@@ -14,6 +14,11 @@ async def stats(bot: Bot, message: Message):
 
 @Client.on_message(filters.command('help'))
 async def help(client, message):
+    reply_markup = InlineKeyboardMarkup(
+            [
+                [
+                    InlineKeyboardButton('Watch Tutorial', url='https://t.me/Sasuke_n_bot?start=Z2V0LTE4NzQ5NDQxMTU2MjA2OTI')
+                ]])
     await message.reply(HELP_TEXT)
 
 @Client.on_message(filters.command('tutorial'))
