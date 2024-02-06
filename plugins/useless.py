@@ -19,12 +19,7 @@ async def help(client, message):
                 [
                     InlineKeyboardButton('Watch Tutorial', url='https://t.me/Sasuke_n_bot?start=Z2V0LTE4NzQ5NDQxMTU2MjA2OTI')
                 ]])
-    await message.reply_text(
-        text = HELP_TEXT),
-        reply_markup = reply_markup,
-        disable_web_page_preview = True,
-        quote = True
-    )
+    await message.reply(HELP_TEXT)
 
 @Client.on_message(filters.command('tutorial'))
 async def tutorial(client, message):
