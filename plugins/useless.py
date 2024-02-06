@@ -17,3 +17,12 @@ async def stats(bot: Bot, message: Message):
 async def useless(_,message: Message):
     if USER_REPLY_TEXT:
         await message.reply(USER_REPLY_TEXT)
+
+
+@Bot.on_message(filters.command('help'))
+async def help(bot: Bot, message: Message):
+    await message.reply(HELP_TEXT)
+
+@Bot.on_message(filters.command('tutorial'))
+async def tutorial(bot: Bot, message: Message):
+    await message.reply(TUTO_TEXT)
