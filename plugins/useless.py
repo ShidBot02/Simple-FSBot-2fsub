@@ -19,10 +19,10 @@ async def useless(_,message: Message):
         await message.reply(USER_REPLY_TEXT)
 
 
-@Client.on_message(filters.private & command('help'))
+@Client.on_message(filters.command('help'))
 async def help(client, message):
     await message.reply(HELP_TEXT)
 
-@Client.on_message(filters.private & command('tutorial'))
+@Client.on_message(filters.command('tutorial'))
 async def tutorial(client, message):
     await message.reply(TUTO_TEXT)
