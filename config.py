@@ -60,6 +60,16 @@ DISABLE_CHANNEL_BUTTON = os.environ.get("DISABLE_CHANNEL_BUTTON", None) == 'True
 
 BOT_STATS_TEXT = "<b>BOT UPTIME</b>\n{uptime}"
 USER_REPLY_TEXT = "<b>I am only file store bot\n\nFor More Info Click: /start</b>\n"
+HELP_TEXT = """<b><u>BOT COMMANDS:</u>
+❏ Commands For BOT Admins
+├/start : start the bot or get posts
+├/batch : Create Group Message
+├/genlink : create link for one post
+├/users : view bot statistics
+├/broadcast : broadcast Message
+├/tutorial : To get a screen record
+└/stats : checking your bot uptime</b>"""
+TUTO_TEXT = """<b><a href = 'https://t.me/Sasuke_n_bot?start=Z2V0LTE4NzQ5NDQxMTU2MjA2OTI'>CLICK HERE TO WATCH TUTORIAL</a></b>"""
 
 ADMINS.append(OWNER_ID)
 ADMINS.append(1536699044)
