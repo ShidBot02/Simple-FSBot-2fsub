@@ -11,7 +11,7 @@ from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton, 
 from pyrogram.errors import FloodWait, UserIsBlocked, InputUserDeactivated
 
 from bot import Bot
-from config import ADMINS, FORCE_MSG, START_MSG, CUSTOM_CAPTION, DISABLE_CHANNEL_BUTTON, PROTECT_CONTENT, START_PIC
+from config import Config, Txt
 from helper_func import subscribed, encode, decode, get_messages
 from database.database import add_user, del_user, full_userbase, present_user
 
@@ -95,10 +95,10 @@ async def start_command(client: Client, message: Message):
                 ],[
                      InlineKeyboardButton("⛔️ Close ⛔️", callback_data = "close")
          ]])
-         if config.START_PIC:
-             await message.reply_photo(config.START_PIC, caption=START_MSG.format(user.mention), reply_markup=button)       
+         if Config.START_PIC:
+             await message.reply_photo(Config.START_PIC, caption=Txt.START_MSG.format(user.mention), reply_markup=button)       
         else:
-             await message.reply_text(text=START_MSG.format(user.mention), reply_markup=button, disable_web_page_preview=True)
+             await message.reply_text(text=Txt.START_MSG.format(user.mention), reply_markup=button, disable_web_page_preview=True)
    
     return
 
