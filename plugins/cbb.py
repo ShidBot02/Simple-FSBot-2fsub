@@ -13,12 +13,13 @@ async def cb_handler(client: Bot, query: CallbackQuery):
             reply_markup = InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("⌬ My Owner ⌬", url = "https://t.me/Shidoteshika1")
-                    ],[
                         InlineKeyboardButton('Aɴɪᴍᴇ Cʜᴀɴɴᴇʟ', url = 'https://t.me/Animemoviesr'),
                         InlineKeyboardButton('Oɴɢᴏɪɴɢ Aɴɪᴍᴇ', url = 'https://t.me/Infinity_Ongoing')
                     ],[
-                        InlineKeyboardButton("⛔️ Close ⛔️", callback_data = "close")
+                        InlineKeyboardButton("⌬ My Owner ⌬", url = "https://t.me/Shidoteshika1")
+                    ],[
+                        InlineKeyboardButton("⬅️ Back", callback_data = "start"),
+                        InlineKeyboardButton("⛔️ Close", callback_data = "close")
                     ]])
         )
     elif data == "help":
@@ -34,7 +35,7 @@ async def cb_handler(client: Bot, query: CallbackQuery):
 <b>‣ /broadcast :</b> broadcast Message
 <b>‣ /stats :</b> checking your bot uptime
 
-<b>➪ Need more help Contact here - @ChatBox480</b>""",
+<b>➪ For more Help Contact- @ChatBox480</b>""",
             disable_web_page_preview = True,
             reply_markup = InlineKeyboardMarkup(
                 [
