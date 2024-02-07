@@ -95,7 +95,7 @@ async def start_command(client: Client, message: Message):
                 ],[
                      InlineKeyboardButton("⛔️ Close ⛔️", callback_data = "close")
          ]])
-         if Config.START_PIC:
+         if config.START_PIC:
              await message.reply_photo(config.START_PIC, caption=START_MSG.format(user.mention), reply_markup=button)       
         else:
              await message.reply_text(text=START_MSG.format(user.mention), reply_markup=button, disable_web_page_preview=True)
