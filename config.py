@@ -42,7 +42,7 @@ class Config(object):
 
 class Txt(object):
   #start message
-  START_MSG = f"Hᴇʟʟᴏ, {first} 👋\n\n<b>I ᴀᴍ Oɴʟʏ Sᴛᴏʀᴇ ғɪʟᴇs ғᴏʀ <a href='https://t.me/Animemoviesr'>infinity void ∞</a></b>"
+  START_MSG = """Hᴇʟʟᴏ, User 👋\n\n<b>I ᴀᴍ Oɴʟʏ Sᴛᴏʀᴇ ғɪʟᴇs ғᴏʀ <a href='https://t.me/Animemoviesr'>infinity void ∞</a></b>"""
 
 try:
     ADMINS=[]
