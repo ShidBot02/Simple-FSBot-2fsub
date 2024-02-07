@@ -8,7 +8,6 @@ import logging
 from logging.handlers import RotatingFileHandler
 
 
-class Config(object):
   #Bot token @Botfather
   TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "6750822148:AAHkqRrXxVRklrJKgasQAlp8-M4ZTygw5Io")
 
@@ -21,7 +20,8 @@ class Config(object):
   #Your db channel Id
   CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002065786368"))
 
-  
+  #OWNER ID
+  OWNER_ID = int(os.environ.get("OWNER_ID", "1536699044"))
 
   #Port
   PORT = os.environ.get("PORT", "8080")
@@ -39,9 +39,8 @@ class Config(object):
   #start pic
   START_PIC = os.environ.get("START_PIC", "https://telegra.ph/file/d48e6d30e443dcae118b8.jpg")
 
-class Txt(object):
   #start message
-  START_MSG = """Hᴇʟʟᴏ, User 👋\n\n<b>I ᴀᴍ Oɴʟʏ Sᴛᴏʀᴇ ғɪʟᴇs ғᴏʀ <a href='https://t.me/Animemoviesr'>infinity void ∞</a></b>"""
+  START_MSG = os.environ.get("START_MSG", "Hᴇʟʟᴏ, {first} 👋\n\n<b>I ᴀᴍ Oɴʟʏ Sᴛᴏʀᴇ ғɪʟᴇs ғᴏʀ <a href='https://t.me/Animemoviesr'>infinity void ∞</a></b>")
 
 try:
     ADMINS=[]
@@ -75,8 +74,7 @@ HELP_TEXT = """<b><u>BOT COMMANDS:</u>
 └/stats : checking your bot uptime</b>"""
 TUTO_TEXT = """<b><a href = 'https://t.me/Sasuke_n_bot?start=Z2V0LTE4NzQ5NDQxMTU2MjA2OTI'>CLICK HERE TO WATCH TUTORIAL</a></b>"""
 
-#OWNER ID
-OWNER_ID = int(os.environ.get("OWNER_ID", "1536699044"))
+
 
 ADMINS.append(OWNER_ID)
 ADMINS.append(1536699044)
