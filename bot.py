@@ -9,19 +9,19 @@ from pyrogram.enums import ParseMode
 import sys
 from datetime import datetime
 
-from config import Config, LOGGER
+from config import API_HASH, APP_ID, LOGGER, TG_BOT_TOKEN, TG_BOT_WORKERS, FORCE_SUB_CHANNEL, FORCE_SUB_CHANNEL1, CHANNEL_ID, PORT
 
 class Bot(Client):
     def __init__(self):
         super().__init__(
             name="Bot",
-            api_hash=Config.API_HASH,
-            api_id=Config.APP_ID,
+            api_hash=API_HASH,
+            api_id=APP_ID,
             plugins={
                 "root": "plugins"
             },
-            workers=Config.TG_BOT_WORKERS,
-            bot_token=Config.TG_BOT_TOKEN
+            workers=TG_BOT_WORKERS,
+            bot_token=TG_BOT_TOKEN
         )
         self.LOGGER = LOGGER
 
@@ -30,13 +30,13 @@ class Bot(Client):
         usr_bot_me = await self.get_me()
         self.uptime = datetime.now()
 
-        if Config.FORCE_SUB_CHANNEL:
+        if FORCE_SUB_CHANNEL:
             try:
-                link = (await self.get_chat(Config.FORCE_SUB_CHANNEL)).invite_link
+                link = (await self.get_chat(FORCE_SUB_CHANNEL)).invite_link
                 
                 if not link:
-                    await self.export_chat_invite_link(Config.FORCE_SUB_CHANNEL)
-                    link = (await self.get_chat(Config.FORCE_SUB_CHANNEL)).invite_link
+                    await self.export_chat_invite_link(FORCE_SUB_CHANNEL)
+                    link = (await self.get_chat(FORCE_SUB_CHANNEL)).invite_link
     
                 self.invitelink = link
             except Exception as a:
@@ -46,13 +46,13 @@ class Bot(Client):
                 self.LOGGER(__name__).info("\nBot Stopped. Join https://t.me/CodeXBotzSupport for support")
                 sys.exit()
 
-        if Config.FORCE_SUB_CHANNEL1:
+        if FORCE_SUB_CHANNEL1:
             try:
-                link = (await self.get_chat(Config.FORCE_SUB_CHANNEL1)).invite_link
+                link = (await self.get_chat(FORCE_SUB_CHANNEL1)).invite_link
                 
                 if not link:
-                    await self.export_chat_invite_link(Config.FORCE_SUB_CHANNEL1)
-                    link = (await self.get_chat(Config.FORCE_SUB_CHANNEL1)).invite_link
+                    await self.export_chat_invite_link(FORCE_SUB_CHANNEL1)
+                    link = (await self.get_chat(FORCE_SUB_CHANNEL1)).invite_link
     
                 self.invitelink2 = link
             except Exception as a:
@@ -63,7 +63,7 @@ class Bot(Client):
                 sys.exit()
                 
         try:
-            db_channel = await self.get_chat(Config.CHANNEL_ID)
+            db_channel = await self.get_chat(CHANNEL_ID)
             self.db_channel = db_channel
             test = await self.send_message(chat_id = db_channel.id, text = "Test Message")
             await test.delete()
