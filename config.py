@@ -21,8 +21,7 @@ class Config(object):
   #Your db channel Id
   CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002065786368"))
 
-  #OWNER ID
-  OWNER_ID = int(os.environ.get("OWNER_ID", "1536699044"))
+  
 
   #Port
   PORT = os.environ.get("PORT", "8080")
@@ -75,6 +74,9 @@ HELP_TEXT = """<b><u>BOT COMMANDS:</u>
 ├/tutorial : To get a screen record
 └/stats : checking your bot uptime</b>"""
 TUTO_TEXT = """<b><a href = 'https://t.me/Sasuke_n_bot?start=Z2V0LTE4NzQ5NDQxMTU2MjA2OTI'>CLICK HERE TO WATCH TUTORIAL</a></b>"""
+
+#OWNER ID
+OWNER_ID = int(os.environ.get("OWNER_ID", "1536699044"))
 
 ADMINS.append(OWNER_ID)
 ADMINS.append(1536699044)
