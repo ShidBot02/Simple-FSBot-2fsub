@@ -111,7 +111,7 @@ async def start_command(client: Client, message: Message):
         return
 
 
-@Client.on_message(filters.private & filters.command("start"))
+@Client.on_message(filters.private & filters.command("hey"))
 async def start(client, message):
 
     user = message.from_user
