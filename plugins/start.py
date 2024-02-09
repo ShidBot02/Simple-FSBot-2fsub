@@ -112,11 +112,8 @@ async def start_command(client: Client, message: Message):
 
 
 @Client.on_message(filters.private & filters.command("hey"))
-async def start(client, message):
-
-    user = message.from_user
-    await db.add_user(client, message)
-    await query.message.edit_text(
+async def hey(client, message):
+  await query.message.edit_text(
                         text = """<b>○ <u>BOT COMMANDS</u> ○
 
 ❏ Cᴏᴍᴍᴀɴᴅs ғᴏʀ ʙᴏᴛ Aᴅᴍɪɴs
