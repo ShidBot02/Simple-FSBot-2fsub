@@ -111,6 +111,25 @@ async def start_command(client: Client, message: Message):
         return
 
 
+@Client.on_message(filters.private & filters.command("start"))
+async def start(client, message):
+
+    user = message.from_user
+    await db.add_user(client, message)
+    button = InlineKeyboardMarkup([[
+        InlineKeyboardButton(
+            '⌬ Aɴɪᴍᴇ Cʜᴀɴɴᴇʟ', url='https://t.me/Animemoviesr'),
+        InlineKeyboardButton(
+            'Aɴɪᴍᴇ Gʀᴏᴜᴘ ⌬', url='https://t.me/ChatBox480')
+    ], [
+        InlineKeyboardButton('🤖 Aʙᴏᴜᴛ', callback_data='about'),
+        InlineKeyboardButton('❗ Hᴇʟᴩ', callback_data='help')
+    ],[
+                InlineKeyboardButton("⛔️  Cʟᴏꜱᴇ  ⛔️", callback_data="close")
+            ]])
+        await message.reply_text(text=START_MSG.format(user.mention), reply_markup=button, disable_web_page_preview=True)
+
+
    
 #=====================================================================================##
 
