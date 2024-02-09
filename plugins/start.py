@@ -116,30 +116,29 @@ async def start(client, message):
 
     user = message.from_user
     await db.add_user(client, message)
-    button = InlineKeyboardMarkup([[
-        InlineKeyboardButton(
-            '⌬ Aɴɪᴍᴇ Cʜᴀɴɴᴇʟ', url='https://t.me/Animemoviesr'),
-        InlineKeyboardButton(
-            'Aɴɪᴍᴇ Gʀᴏᴜᴘ ⌬', url='https://t.me/ChatBox480')
-    ], [
-        InlineKeyboardButton('🤖 Aʙᴏᴜᴛ', callback_data='about'),
-        InlineKeyboardButton('❗ Hᴇʟᴩ', callback_data='help')
-    ],[
-                InlineKeyboardButton("⛔️  Cʟᴏꜱᴇ  ⛔️", callback_data="close")
-            ]])
-        await message.reply_text(
-            text = START_MSG.format(
-                first = message.from_user.first_name,
-                last = message.from_user.last_name,
-                username = None if not message.from_user.username else '@' + message.from_user.username,
-                mention = message.from_user.mention,
-                id = message.from_user.id
-            ),
-            reply_markup = reply_markup,
+    await query.message.edit_text(
+                        text = """<b>○ <u>BOT COMMANDS</u> ○
+
+❏ Cᴏᴍᴍᴀɴᴅs ғᴏʀ ʙᴏᴛ Aᴅᴍɪɴs
+
+‣ /start :</b> start the bot or get posts
+<b>‣ /batch :</b> create group messages
+<b>‣ /genlink :</b> create link for one post
+<b>‣ /users :</b> view bot statistics
+<b>‣ /broadcast :</b> broadcast Message
+<b>‣ /stats :</b> checking your bot uptime
+
+<b>➪ For more Help Contact- @ChatBox480</b>""",
             disable_web_page_preview = True,
-            quote = True
+            reply_markup = InlineKeyboardMarkup(
+                [
+                    [
+                        InlineKeyboardButton("🤖 About", callback_data = "about"),
+                        InlineKeyboardButton("⬅️ Back", callback_data = "start")
+                    ],[
+                        InlineKeyboardButton("⛔️ Close ⛔️", callback_data = "close")
+                ]])
         )
-        return
 
    
 #=====================================================================================##
