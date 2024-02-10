@@ -66,8 +66,8 @@ HELP_TEXT = """<b>Hello User,
 
 I am a simple file renamer bot that can only store files for a specific channel. You need to join below channels to use me properly.
 
-Anime Channel: <a href= 'https://t.me/Animemoviesr'>infinity void ∞
-Ongoing Channel: <a href= 'https://t.me/Infinity_Ongoing'>∞ ongoing</b>
+1. Anime Channel: <a href= 'https://t.me/Animemoviesr'>infinity void ∞</a>
+2. Ongoing Channel: <a href= 'https://t.me/Infinity_Ongoing'>∞ ongoing</a></b>
 
 <b>/help</b> - Only this command you can use without joining any channel.
 Only user can access /help command''
