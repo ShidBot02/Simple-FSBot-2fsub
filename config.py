@@ -63,7 +63,9 @@ DISABLE_CHANNEL_BUTTON = os.environ.get("DISABLE_CHANNEL_BUTTON", None) == 'True
 BOT_STATS_TEXT = "<b>BOT UPTIME</b>\n{uptime}"
 USER_REPLY_TEXT = "<b>I am only file store bot\n\nFor More Info Click: /start</b>\n"
 HELP_TEXT = """<b><u>BOT COMMANDS:</u>
+
 ❏ Commands For BOT Admins
+
 ├/start : start the bot or get posts
 ├/batch : Create Group Message
 ├/genlink : create link for one post
