@@ -18,8 +18,8 @@ async def cb_handler(client: Bot, query: CallbackQuery):
                     ],[
                         InlineKeyboardButton("⌬ My Owner ⌬", url = "https://t.me/Shidoteshika1")
                     ],[
-                        InlineKeyboardButton("⬅️ Back", callback_data = "start"),
-                        InlineKeyboardButton("⛔️ Close", callback_data = "close")
+                        InlineKeyboardButton("⬅️", callback_data = "start"),
+                        InlineKeyboardButton("⛔️", callback_data = "close")
                     ]])
         )
     elif data == "help":
@@ -40,10 +40,10 @@ async def cb_handler(client: Bot, query: CallbackQuery):
             reply_markup = InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("🤖 About", callback_data = "about"),
-                        InlineKeyboardButton("⬅️ Back", callback_data = "start")
+                        InlineKeyboardButton("🤖", callback_data = "about"),
+                        InlineKeyboardButton("⬅️", callback_data = "start")
                     ],[
-                        InlineKeyboardButton("⛔️ Close ⛔️", callback_data = "close")
+                        InlineKeyboardButton("⛔️", callback_data = "close")
                 ]])
         )
     elif data == "start":
@@ -55,10 +55,10 @@ async def cb_handler(client: Bot, query: CallbackQuery):
                 [
                     InlineKeyboardButton('⛩️ OUR OTHER CHANNELS ⛩️', url='https://t.me/animemoviesr/3171')
                 ], [
-                     InlineKeyboardButton("🤖 About Me", callback_data = "about"),
-                     InlineKeyboardButton("❕Help", callback_data = "help")
+                     InlineKeyboardButton("🤖", callback_data = "about"),
+                     InlineKeyboardButton("❕", callback_data = "help")
                 ],[
-                     InlineKeyboardButton("⛔️ Close ⛔️", callback_data = "close")
+                     InlineKeyboardButton("⛔️", callback_data = "close")
             ]])
         )
     elif data == "command":
@@ -79,8 +79,8 @@ async def cb_handler(client: Bot, query: CallbackQuery):
             reply_markup = InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("⬅️ Back", callback_data = "hstart"),
-                        InlineKeyboardButton("⛔️ Close", callback_data = "close")
+                        InlineKeyboardButton("⬅️", callback_data = "hstart"),
+                        InlineKeyboardButton("⛔️", callback_data = "close")
                     ]])
         )
     elif data == "hstart":
