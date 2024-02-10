@@ -35,7 +35,7 @@ async def cb_handler(client: Bot, query: CallbackQuery):
 <b>‣ /broadcast :</b> broadcast Message
 <b>‣ /stats :</b> checking your bot uptime
 
-<b>➪ For more Help Contact- @ChatBox480</b>""",
+➪ For more Help Contact- <b>@ChatBox480</b>""",
             disable_web_page_preview = True,
             reply_markup = InlineKeyboardMarkup(
                 [
