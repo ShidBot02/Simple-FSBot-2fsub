@@ -61,6 +61,50 @@ async def cb_handler(client: Bot, query: CallbackQuery):
                      InlineKeyboardButton("⛔️ Close ⛔️", callback_data = "close")
             ]])
         )
+    elif data == "command":
+           await query.message.edit_text(
+                        text = """<b>○ <u>BOT COMMANDS</u> ○
+
+❏ Cᴏᴍᴍᴀɴᴅs ғᴏʀ ʙᴏᴛ Aᴅᴍɪɴs
+
+‣ /start :</b> start the bot or get posts
+<b>‣ /batch :</b> create group messages
+<b>‣ /genlink :</b> create link for one post
+<b>‣ /users :</b> view bot statistics
+<b>‣ /broadcast :</b> broadcast Message
+<b>‣ /stats :</b> checking your bot uptime
+
+<b>➪ For more Help Contact- @ChatBox480</b>""",
+            disable_web_page_preview = True,
+            reply_markup = InlineKeyboardMarkup(
+                [
+                    [
+                        InlineKeyboardButton("⬅️ Back", callback_data = "hcommd"),
+                        InlineKeyboardButton("⛔️ Close", callback_data = "close")
+                    ]])
+        )
+    elif data == "hcommd":
+           await query.message.edit_text(
+                        text = """<b>○ <u>BOT COMMANDS</u> ○
+
+❏ Cᴏᴍᴍᴀɴᴅs ғᴏʀ ʙᴏᴛ Aᴅᴍɪɴs
+
+‣ /start :</b> start the bot or get posts
+<b>‣ /batch :</b> create group messages
+<b>‣ /genlink :</b> create link for one post
+<b>‣ /users :</b> view bot statistics
+<b>‣ /broadcast :</b> broadcast Message
+<b>‣ /stats :</b> checking your bot uptime
+
+<b>➪ For more Help Contact- @ChatBox480</b>""",
+            disable_web_page_preview = True,
+            reply_markup = InlineKeyboardMarkup(
+                [
+                    [
+                        InlineKeyboardButton("⬅️ Back", callback_data = "hcommd"),
+                        InlineKeyboardButton("⛔️ Close", callback_data = "close")
+                    ]])
+        )
     elif data == "close":
         await query.message.delete()
         try:
