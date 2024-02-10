@@ -97,10 +97,13 @@ I am a simple file renamer bot that can only store files for a specific channel.
 <b>For Contact Admins, Click Below:</b>""",
             disable_web_page_preview = True,
             reply_markup = InlineKeyboardMarkup(
-                [
+                 [
+               
                     [
-                        InlineKeyboardButton("⬅️ Back", callback_data = "hcommd"),
-                        InlineKeyboardButton("⛔️ Close", callback_data = "close")
+                          InlineKeyboardButton('Join Support Group', url='https://t.me/chatbox480')
+                    ],[
+                          InlineKeyboardButton("🤖 Bot Commands", callback_data = "about"),
+                          InlineKeyboardButton("⛔️ Close", callback_data = "close")
                     ]])
         )
     elif data == "close":
