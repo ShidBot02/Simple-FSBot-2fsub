@@ -41,10 +41,9 @@ async def cb_handler(client: Bot, query: CallbackQuery):
                 [
                     [
                         InlineKeyboardButton("🤖", callback_data = "about"),
+                        InlineKeyboardButton("⛔️", callback_data = "close"),
                         InlineKeyboardButton("⬅️", callback_data = "start")
-                    ],[
-                        InlineKeyboardButton("⛔️", callback_data = "close")
-                ]])
+                    ]])
         )
     elif data == "start":
         await query.message.edit_text(
@@ -56,10 +55,9 @@ async def cb_handler(client: Bot, query: CallbackQuery):
                     InlineKeyboardButton('⛩️ OUR OTHER CHANNELS ⛩️', url='https://t.me/animemoviesr/3171')
                 ], [
                      InlineKeyboardButton("🤖", callback_data = "about"),
+                     InlineKeyboardButton("⛔️", callback_data = "close"),
                      InlineKeyboardButton("❕", callback_data = "help")
-                ],[
-                     InlineKeyboardButton("⛔️", callback_data = "close")
-            ]])
+                ]])
         )
     elif data == "command":
            await query.message.edit_text(
