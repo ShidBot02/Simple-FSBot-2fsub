@@ -48,7 +48,7 @@ async def cb_handler(client: Bot, query: CallbackQuery):
         )
     elif data == "start":
         await query.message.edit_text(
-                    text = """<b>Hᴇʟʟᴏ....\n\nI ᴀᴍ Oɴʟʏ Sᴛᴏʀᴇ ғɪʟᴇs ғᴏʀ <a href='https://t.me/Animemoviesr'>infinity void ∞</a></b>""",
+                    text = """<b>Hᴇʟʟᴏ !!\n\nI ᴀᴍ Oɴʟʏ Sᴛᴏʀᴇ ғɪʟᴇs ғᴏʀ <a href='https://t.me/Animemoviesr'>infinity void ∞</a></b>""",
             disable_web_page_preview = True,
             reply_markup = InlineKeyboardMarkup(
             [
