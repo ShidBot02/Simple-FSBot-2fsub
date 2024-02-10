@@ -79,24 +79,22 @@ async def cb_handler(client: Bot, query: CallbackQuery):
             reply_markup = InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("⬅️ Back", callback_data = "hcommd"),
+                        InlineKeyboardButton("⬅️ Back", callback_data = "hstart"),
                         InlineKeyboardButton("⛔️ Close", callback_data = "close")
                     ]])
         )
-    elif data == "hcommd":
+    elif data == "hstart":
            await query.message.edit_text(
-                        text = """<b>○ <u>BOT COMMANDS</u> ○
+                        text = """<b>Hello User,
 
-❏ Cᴏᴍᴍᴀɴᴅs ғᴏʀ ʙᴏᴛ Aᴅᴍɪɴs
+I am a simple file renamer bot that can only store files for a specific channel. You need to join below channels to use me properly.
 
-‣ /start :</b> start the bot or get posts
-<b>‣ /batch :</b> create group messages
-<b>‣ /genlink :</b> create link for one post
-<b>‣ /users :</b> view bot statistics
-<b>‣ /broadcast :</b> broadcast Message
-<b>‣ /stats :</b> checking your bot uptime
+1. Anime Channel: <a href= 'https://t.me/Animemoviesr'>infinity void ∞</a>
+2. Ongoing Channel: <a href= 'https://t.me/Infinity_Ongoing'>∞ ongoing</a></b>
 
-<b>➪ For more Help Contact- @ChatBox480</b>""",
+<b>/help</b> - Only this command you can use without joining any channel.
+
+<b>For Contact Admins, Click Below:</b>""",
             disable_web_page_preview = True,
             reply_markup = InlineKeyboardMarkup(
                 [
