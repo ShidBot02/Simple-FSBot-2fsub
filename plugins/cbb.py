@@ -74,7 +74,7 @@ async def cb_handler(client: Bot, query: CallbackQuery):
 <b>‣ /broadcast :</b> broadcast Message
 <b>‣ /stats :</b> checking your bot uptime
 
-<b>➪ For more Help Contact- @ChatBox480</b>""",
+➪ For more Help Contact- <b>@ChatBox480</b>""",
             disable_web_page_preview = True,
             reply_markup = InlineKeyboardMarkup(
                 [
@@ -102,7 +102,7 @@ I am a simple file renamer bot that can only store files for a specific channel.
                     [
                           InlineKeyboardButton('Join Support Group', url='https://t.me/chatbox480')
                     ],[
-                          InlineKeyboardButton("🤖 Bot Commands", callback_data = "about"),
+                          InlineKeyboardButton("🤖 Bot Commands", callback_data = "command"),
                           InlineKeyboardButton("⛔️ Close", callback_data = "close")
                     ]])
         )
