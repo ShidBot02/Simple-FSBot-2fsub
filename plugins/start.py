@@ -111,8 +111,8 @@ async def start_command(client: Client, message: Message):
         return
 
 
-@Bot.on_message(filters.command('hey') & filters.private)
-async def hey(client: Client, message: Message):
+@Bot.on_message(filters.command('help') & filters.private)
+async def help(client: Client, message: Message):
     id = message.from_user.id
     if not await present_user(id):
         try:
@@ -181,12 +181,7 @@ async def hey(client: Client, message: Message):
         reply_markup = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton('⛩️ OUR OTHER CHANNELS ⛩️', url='https://t.me/animemoviesr/3171')
-                ], [
-                     InlineKeyboardButton("🤖 About Me", callback_data = "about"),
-                     InlineKeyboardButton("❕Help", callback_data = "help")
-                ],[
-                     InlineKeyboardButton("⛔️ Close ⛔️", callback_data = "close")
+                    InlineKeyboardButton('Join Support Group', url='https://t.me/chatbox480')
          ]])
          
         await message.reply_text(
