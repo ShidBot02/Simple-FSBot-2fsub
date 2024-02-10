@@ -62,17 +62,17 @@ DISABLE_CHANNEL_BUTTON = os.environ.get("DISABLE_CHANNEL_BUTTON", None) == 'True
 
 BOT_STATS_TEXT = "<b>BOT UPTIME</b>\n{uptime}"
 USER_REPLY_TEXT = "<b>I am only file store bot\n\nFor More Info Click: /start</b>\n"
-HELP_TEXT = """<b><u>BOT COMMANDS:</u>
+HELP_TEXT = """<b>Hello User,
 
-❏ Commands For BOT Admins
+I am a simple file renamer bot that can only store files for a specific channel. You need to join below channels to use me properly.
 
-├/start : start the bot or get posts
-├/batch : Create Group Message
-├/genlink : create link for one post
-├/users : view bot statistics
-├/broadcast : broadcast Message
-├/tutorial : To get a screen record
-└/stats : checking your bot uptime</b>"""
+Anime Channel: <a href= 'https://t.me/Animemoviesr'>infinity void ∞
+Ongoing Channel: <a href= 'https://t.me/Infinity_Ongoing'>∞ ongoing</b>
+
+<b>/help</b> - Only this command you can use without joining any channel.
+Only user can access /help command''
+
+<b>For Contact Admins, Click Below:</b>"""
 TUTO_TEXT = """<b><a href = 'https://t.me/Sasuke_n_bot?start=Z2V0LTE4NzQ5NDQxMTU2MjA2OTI'>CLICK HERE TO WATCH TUTORIAL</a></b>"""
 
 
