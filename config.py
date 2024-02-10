@@ -70,7 +70,6 @@ I am a simple file renamer bot that can only store files for a specific channel.
 2. Ongoing Channel: <a href= 'https://t.me/Infinity_Ongoing'>∞ ongoing</a></b>
 
 <b>/help</b> - Only this command you can use without joining any channel.
-Only user can access /help command''
 
 <b>For Contact Admins, Click Below:</b>"""
 TUTO_TEXT = """<b><a href = 'https://t.me/Sasuke_n_bot?start=Z2V0LTE4NzQ5NDQxMTU2MjA2OTI'>CLICK HERE TO WATCH TUTORIAL</a></b>"""
