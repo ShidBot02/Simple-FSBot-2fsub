@@ -185,7 +185,8 @@ async def help(client: Client, message: Message):
                      InlineKeyboardButton("🤖 Bot Commands", callback_data = "command"),
                      InlineKeyboardButton("⛔️ Close", callback_data = "close")
          ]])
-         await message.reply_photo(
+         
+        await message.reply_photo(
             photo= ONGOING,
             caption= HELP_TEXT.format(
                 first = message.from_user.first_name,
