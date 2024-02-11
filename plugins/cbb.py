@@ -2,6 +2,7 @@
 
 from bot import Bot
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
+from config import OWNER_ID
 
 @Bot.on_callback_query()
 async def cb_handler(client: Bot, query: CallbackQuery):
@@ -16,7 +17,7 @@ async def cb_handler(client: Bot, query: CallbackQuery):
                         InlineKeyboardButton('Aɴɪᴍᴇ Cʜᴀɴɴᴇʟ', url = 'https://t.me/Animemoviesr'),
                         InlineKeyboardButton('Oɴɢᴏɪɴɢ Aɴɪᴍᴇ', url = 'https://t.me/Infinity_Ongoing')
                     ],[
-                        InlineKeyboardButton("⌬ My Owner ⌬", url = "https://t.me/Shidoteshika1")
+                        InlineKeyboardButton("⌬ My Owner ⌬", url = f"tg://user?id={OWNER_ID}"")
                     ],[
                         InlineKeyboardButton("⬅️", callback_data = "start"),
                         InlineKeyboardButton("⛔️", callback_data = "close")
