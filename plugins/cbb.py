@@ -17,7 +17,7 @@ async def cb_handler(client: Bot, query: CallbackQuery):
                         InlineKeyboardButton('Aɴɪᴍᴇ Cʜᴀɴɴᴇʟ', url = 'https://t.me/Animemoviesr'),
                         InlineKeyboardButton('Oɴɢᴏɪɴɢ Aɴɪᴍᴇ', url = 'https://t.me/Infinity_Ongoing')
                     ],[
-                        InlineKeyboardButton("⌬ My Owner ⌬", url = f"tg://user?id={OWNER_ID}"")
+                        InlineKeyboardButton("⌬ My Owner ⌬", url = f"tg://user?id={OWNER_ID}")
                     ],[
                         InlineKeyboardButton("⬅️", callback_data = "start"),
                         InlineKeyboardButton("⛔️", callback_data = "close")
