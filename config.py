@@ -39,7 +39,7 @@ TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 START_PIC = os.environ.get("START_PIC", "https://telegra.ph/file/d48e6d30e443dcae118b8.jpg")
 
 #start message
-START_MSG = os.environ.get("START_MSG", "Hᴇʟʟᴏ, {first} 👋\n\n<b>I ᴀᴍ Oɴʟʏ Sᴛᴏʀᴇ ғɪʟᴇs ғᴏʀ <a href='https://t.me/Animemoviesr'>infinity void ∞</a></b>")
+START_MSG = os.environ.get("START_MSG", "<b>Hᴇʟʟᴏ, {first} ~\n\n  A Telegram Bot for storing posts or files for <a href='https://t.me/Animemoviesr'>infinity void ∞</a> ,that can be accessed via a Special Link.\n\n👨‍💻 Developed by @Shidoteshika1</b>")
 
 try:
     ADMINS=[]
