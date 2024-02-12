@@ -88,11 +88,8 @@ async def start_command(client: Client, message: Message):
         reply_markup = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton('⛩️ OUR OTHER CHANNELS ⛩️', url='https://t.me/animemoviesr/3171')
-                ], [
-                     InlineKeyboardButton("🤖", callback_data = "about"),
-                     InlineKeyboardButton("⛔️", callback_data = "close"),
-                     InlineKeyboardButton("❕", callback_data = "help")
+                    InlineKeyboardButton('Aɴɪᴍᴇ Cʜᴀɴɴᴇʟ', url = 'https://t.me/Animemoviesr'),
+                    InlineKeyboardButton('Oɴɢᴏɪɴɢ Aɴɪᴍᴇ', url = 'https://t.me/Infinity_Ongoing')
                 ]])
          
         await message.reply_photo(
@@ -195,10 +192,15 @@ async def help(client: Client, message: Message):
                 id = message.from_user.id
             ),
             reply_markup = reply_markup,
-            quote = True
+            #quote = True
         )
         return
 
+
+                     #InlineKeyboardButton("🤖", callback_data = "about"),
+                     #InlineKeyboardButton("⛔️", callback_data = "close"),
+                     #InlineKeyboardButton("❕", callback_data = "help")
+            
    
 #=====================================================================================##
 
