@@ -64,7 +64,7 @@ BOT_STATS_TEXT = "<b>BOT UPTIME</b>\n{uptime}"
 USER_REPLY_TEXT = "<b>I am only file store bot\n\nFor More Info Click: /start</b>\n"
 HELP_TEXT = """<b>Hello User,
 
-I am a simple file renamer bot that can only store files for a specific channel. You need to join below channels to use me properly.
+I am a simple file supplier bot that can only store files for a specific channel. You need to join below channels to use me properly.
 
 1. Anime Channel: <a href= 'https://t.me/Animemoviesr'>infinity void ∞</a>
 2. Ongoing Channel: <a href= 'https://t.me/Infinity_Ongoing'>∞ ongoing</a></b>
