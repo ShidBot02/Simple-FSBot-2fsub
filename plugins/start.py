@@ -220,7 +220,8 @@ async def not_joined(client: Client, message: Message):
              InlineKeyboardButton(text="ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ 𝟸", url=client.invitelink2)    
         ]
     ]
-    buttons.append(
+    try:
+       buttons.append(
             [
                 InlineKeyboardButton(
                     text = '♻️ Try Again',
@@ -228,8 +229,8 @@ async def not_joined(client: Client, message: Message):
                 )
             ]
         )
-    #except IndexError:
-        #pass
+    except IndexError:
+        pass
 
     await message.reply(
         text = FORCE_MSG.format(
