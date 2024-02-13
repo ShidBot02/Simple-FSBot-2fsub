@@ -244,7 +244,7 @@ async def not_joined(client: Client, message: Message):
         quote = True,
         disable_web_page_preview = True
     )
-    temp_msg = await message.reply("*NOTE:*\n__*After joining the Channel in case the*__ *♻️ Try Again* __*button didn't work then go to the previous link and Click again.*__\n\n```This Problem accured due to New update of telegram```")
+    temp_msg = await message.reply("""*NOTE:*\n__*After joining the Channel in case the*__ *♻️ Try Again* __*button didn't work then go to the previous link and Click again.*__\n\n```This Problem accured due to New update of telegram```""")
     await asyncio.sleep(15)
     await temp_msg.delete(30)
     
