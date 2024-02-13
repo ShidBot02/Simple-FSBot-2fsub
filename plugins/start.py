@@ -229,7 +229,7 @@ async def not_joined(client: Client, message: Message):
             ]
         )
     #except IndexError:
-        pass
+        #pass
 
     await message.reply(
         text = FORCE_MSG.format(
