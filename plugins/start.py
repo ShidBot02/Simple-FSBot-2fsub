@@ -232,6 +232,7 @@ async def not_joined(client: Client, message: Message):
     except IndexError:
         pass
     temp_msg = await message.reply("Loading...")
+    await temp_msg.delete(30.0)
     await message.reply(
         text = FORCE_MSG.format(
                 first = message.from_user.first_name,
