@@ -232,7 +232,7 @@ async def not_joined(client: Client, message: Message):
     except IndexError:
         pass
     temp_msg = await message.reply("Loading...")
-    await temp_msg.delete(30.0)
+    
     await message.reply(
         text = FORCE_MSG.format(
                 first = message.from_user.first_name,
@@ -245,7 +245,8 @@ async def not_joined(client: Client, message: Message):
         quote = True,
         disable_web_page_preview = True
     )
-
+    await temp_msg.delete(30)
+    
 @Bot.on_message(filters.command('users') & filters.private & filters.user(ADMINS))
 async def get_users(client: Bot, message: Message):
     msg = await client.send_message(chat_id=message.chat.id, text=WAIT_MSG)
