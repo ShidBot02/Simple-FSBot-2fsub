@@ -244,7 +244,7 @@ async def not_joined(client: Client, message: Message):
         quote = True,
         disable_web_page_preview = True
     )
-    temp_msg = await message.reply("<b>𝗡𝗢𝗧𝗘:\n\nAғᴛᴇʀ jᴏɪɴɪɴɢ ᴛʜᴇ Cʜᴀɴɴᴇʟ ɪɴ ᴄᴀsᴇ ᴛʜᴇ \n<u>♻️ Try Again</u> ʙᴜᴛᴛᴏɴ ᴅɪᴅɴ'ᴛ ᴡᴏʀᴋ ᴛʜᴇɴ ɢᴏ ᴛᴏ ᴛʜᴇ ᴘʀᴇᴠɪᴏᴜs ʟɪɴᴋ ᴀɴᴅ Cʟɪᴄᴋ ᴀɢᴀɪɴ.</b>\n\nTʜɪs Pʀᴏʙʟᴇᴍ ᴀᴄᴄᴜʀᴇᴅ ᴅᴜᴇ ᴛᴏ Nᴇᴡ ᴜᴘᴅᴀᴛᴇ ᴏғ ᴛᴇʟᴇɢʀᴀᴍ")
+    temp_msg = await message.reply("<b>𝗡𝗢𝗧𝗘:\n\nAғᴛᴇʀ jᴏɪɴɪɴɢ ᴛʜᴇ Cʜᴀɴɴᴇʟ, ɪɴ ᴄᴀsᴇ ᴛʜᴇ \n<u>♻️ Try Again</u> ʙᴜᴛᴛᴏɴ ᴅɪᴅɴ'ᴛ ᴡᴏʀᴋ ᴛʜᴇɴ ɢᴏ ᴛᴏ ᴛʜᴇ ᴘʀᴇᴠɪᴏᴜs ʟɪɴᴋ ᴀɴᴅ Cʟɪᴄᴋ ᴀɢᴀɪɴ.</b>\n\nTʜɪs Pʀᴏʙʟᴇᴍ ᴀᴄᴄᴜʀᴇᴅ ᴅᴜᴇ ᴛᴏ Nᴇᴡ ᴜᴘᴅᴀᴛᴇ ᴏғ ᴛᴇʟᴇɢʀᴀᴍ")
     await asyncio.sleep(30)
     await temp_msg.delete(30)
     
