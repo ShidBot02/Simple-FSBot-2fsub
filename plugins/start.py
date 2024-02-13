@@ -228,7 +228,7 @@ async def not_joined(client: Client, message: Message):
                 )
             ]
         )
-    except IndexError:
+    #except IndexError:
         pass
 
     await message.reply(
