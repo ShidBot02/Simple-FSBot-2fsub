@@ -2,7 +2,7 @@ from bot import Bot
 import asyncio
 from pyrogram.types import Message
 from pyrogram import filters
-from config import ADMINS, BOT_STATS_TEXT, USER_REPLY_TEXT, BOT_CMD
+from config import ADMINS, BOT_STATS_TEXT, USER_REPLY_TEXT
 from datetime import datetime
 from helper_func import get_readable_time
 
@@ -15,7 +15,7 @@ async def stats(bot: Bot, message: Message):
 
 @Bot.on_message(filters.command('bcmd') & filters.user(ADMINS))
 async def bcmd(bot: Bot, message: Message):
-    tmp_msg = await message.reply(BOT_CMD)
+    tmp_msg = await message.reply("<b>❏ Cᴏᴍᴍᴀɴᴅs ғᴏʀ ʙᴏᴛ Aᴅᴍɪɴs\n\n‣ /start :</b> start the bot or get posts\n<b>‣ /batch :</b> create group messages\n<b>‣ /genlink :</b> create link for one post\n<b>‣ /users :</b> view bot statistics\n<b>‣ /broadcast :</b> broadcast Message\n<b>‣ /stats :</b> checking your bot uptime\n")
     await asyncio.sleep(30)
     await tmp_msg.delete()
     await message.delete()
