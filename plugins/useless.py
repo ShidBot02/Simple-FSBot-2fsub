@@ -17,7 +17,8 @@ async def stats(bot: Bot, message: Message):
 async def bcmd(bot: Bot, message: Message):
     await message.reply(BOT_CMD)
     await asyncio.sleep(30)
-    await BOT_CMD.delete()
+    await query.message.delete()
+        
 
 @Bot.on_message(filters.private)
 async def useless(_,message: Message):
