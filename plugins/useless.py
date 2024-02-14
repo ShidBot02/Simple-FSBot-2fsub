@@ -17,6 +17,7 @@ async def stats(bot: Bot, message: Message):
 async def bcmd(bot: Bot, message: Message):
     await message.reply(BOT_CMD)
     await asyncio.sleep(30)
+    await message.reply.delete()
     await message.delete()
         
 
