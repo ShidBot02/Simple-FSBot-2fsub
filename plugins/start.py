@@ -15,7 +15,7 @@ from config import ADMINS, FORCE_MSG, START_MSG, CUSTOM_CAPTION, DISABLE_CHANNEL
 from helper_func import subscribed, encode, decode, get_messages
 from database.database import add_user, del_user, full_userbase, present_user
 
-ONGOING = "https://telegra.ph/file/c303fe34a28376a6c7bfe.jpg"
+ONGOING = "https://telegra.ph/file/c303fe34a28376a6c7bfe.jpg https://telegra.ph/file/10b65c5f0a1ba29c6bdab.jpg"
 
 
 @Bot.on_message(filters.command('start') & filters.private & subscribed)
