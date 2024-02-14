@@ -177,10 +177,9 @@ async def help(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton('Join Support Group', url='https://t.me/chatbox480')
-         ],[
-                     InlineKeyboardButton("🤖 Bot Commands", callback_data = "command"),
-                     InlineKeyboardButton("⛔️ Close", callback_data = "close")
-         ]])
+         ]
+               #[ InlineKeyboardButton("🤖 Bot Commands", callback_data = "command"), InlineKeyboardButton("⛔️ Close", callback_data = "close")]
+         ])
          
         await message.reply_photo(
             photo= ONGOING,
