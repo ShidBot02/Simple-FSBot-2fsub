@@ -15,9 +15,9 @@ async def stats(bot: Bot, message: Message):
 
 @Bot.on_message(filters.command('bcmd') & filters.user(ADMINS))
 async def bcmd(bot: Bot, message: Message):
-    await message.reply(BOT_CMD)
+    tmp_msg = await message.reply(BOT_CMD)
     await asyncio.sleep(30)
-    await message.reply.delete()
+    await tmp_msg.delete()
     await message.delete()
         
 
