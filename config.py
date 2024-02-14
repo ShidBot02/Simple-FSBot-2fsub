@@ -73,15 +73,6 @@ I am a simple file supplier bot that can only store files for a specific channel
 
 <b>For Contact Admins, Click Below:</b>"""
 
-BOT_CMD = """<b>❏ Cᴏᴍᴍᴀɴᴅs ғᴏʀ ʙᴏᴛ Aᴅᴍɪɴs
-
-‣ /start :</b> start the bot or get posts
-<b>‣ /batch :</b> create group messages
-<b>‣ /genlink :</b> create link for one post
-<b>‣ /users :</b> view bot statistics
-<b>‣ /broadcast :</b> broadcast Message
-<b>‣ /stats :</b> checking your bot uptime"""
-
 
 
 ADMINS.append(OWNER_ID)
