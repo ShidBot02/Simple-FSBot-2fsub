@@ -240,7 +240,7 @@ async def not_joined(client: Client, message: Message):
                 id = message.from_user.id
             ),
         reply_markup = InlineKeyboardMarkup(buttons),
-        quote = True,
+        #quote = True,
         disable_web_page_preview = True
     )
     
