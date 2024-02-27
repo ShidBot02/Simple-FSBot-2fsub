@@ -39,7 +39,7 @@ TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 START_PIC = os.environ.get("START_PIC", "https://telegra.ph/file/d48e6d30e443dcae118b8.jpg")
 
 #start message
-START_MSG = os.environ.get("START_MSG", "<b>Hᴇʟʟᴏ, {first} ~\n\n  I am a Telegram Bot that store posts or files for <a href='https://t.me/Animemoviesr'>infinity void ∞</a> , And can be accessed via a Special Link.\n\n👨‍💻 Developed by @Shidoteshika1</b>")
+START_MSG = os.environ.get("START_MSG", "<b>Hᴇʟʟᴏ, {mention} ~\n\n  I am a Telegram Bot that store posts or files for Specific Channel , And can be accessed via a Special Link.\n\n👨‍💻 Developed by @Shidoteshika1</b>")
 
 try:
     ADMINS=[]
@@ -49,7 +49,7 @@ except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
 
 #Force sub message 
-FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "⚠️ Hey {mention} !\n\n<b>Join my Channels first to receive files or initiate message</b>")
+FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "⚠️ Hey {mention} !\n\n<b>You need to Join My Channels to use Me\n\nKindly Join Below Channels</b>")
 
 #set your Custom Caption here, Keep None for Disable Custom Caption
 CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", None)
@@ -62,16 +62,6 @@ DISABLE_CHANNEL_BUTTON = os.environ.get("DISABLE_CHANNEL_BUTTON", None) == 'True
 
 BOT_STATS_TEXT = "<b>BOT UPTIME</b>\n{uptime}"
 USER_REPLY_TEXT = "<b>I am only file store bot\n\nFor More Info Click: /start</b>\n"
-HELP_TEXT = """<b>Hello User,
-
-I am a simple file supplier bot that can only store files for a specific channel. You need to join below channels to use me properly.
-
-1. Anime Channel: <a href= 'https://t.me/Animemoviesr'>infinity void ∞</a>
-2. Ongoing Channel: <a href= 'https://t.me/Infinity_Ongoing'>∞ ongoing</a></b>
-
-<b>/help</b> - Only this command you can use without joining any channel.
-
-<b>For Contact Admins, Click Below:</b>"""
 
 
 
