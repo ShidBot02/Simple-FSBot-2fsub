@@ -47,11 +47,11 @@
     },
     "START_MESSAGE": {
       "description": "Optional: start message of bot, use HTML parsemode format",
-      "value": "Hᴇʟʟᴏ, {first} 👋 <b>I ᴀᴍ Oɴʟʏ Sᴛᴏʀᴇ ғɪʟᴇs ғᴏʀ <a href='https://t.me/chatbox480'>Aɴɪᴍᴇ Cɪʀᴄʟᴇ ™</a></b>"
+      "value": "<b>Hᴇʟʟᴏ, {mention} ~\n\n  I am a Telegram Bot that store posts or files for Specific Channel , And can be accessed via a Special Link.\n\n👨‍💻 Developed by @Shidoteshika1</b>"
     },
     "FORCE_SUB_MESSAGE": {
       "description": "Optional: Force Sub message of bot, use HTML parsemode format",
-      "value": "Hello {first} <b>You need to join in my Channel/Group to use me\n\nKindly Please join Channel</b>"
+      "value": "Hello {mention} <b>You need to join in my Channels to use me\n\nKindly Join below Channel</b>"
     },
     "ADMINS": {
       "description": "A space separated list of user_ids of Admins, they can only create links",
