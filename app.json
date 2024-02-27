@@ -51,7 +51,7 @@
     },
     "FORCE_SUB_MESSAGE": {
       "description": "Optional: Force Sub message of bot, use HTML parsemode format",
-      "value": "Hello {mention} <b>You need to join in my Channels to use me\n\nKindly Join below Channel</b>"
+      "value": "Hello {mention} <b>\n\nYou need to join in my Channels to use me\n\nKindly Join below Channel</b>"
     },
     "ADMINS": {
       "description": "A space separated list of user_ids of Admins, they can only create links",
